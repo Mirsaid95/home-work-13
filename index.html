@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
-    <header class="header container">
+    <head class="header container">
         <nav class="header__nav df">
             <div class="header__logo">
                 <img src="./images/logo.svg" alt="">
@@ -14,13 +17,317 @@
 
             <div class="header__right df">
                 <ul class="header__list">
-                    <li><a href="#"></a>Marketplace</li>
-                    <li><a href="#"></a>Rankings</li>
-                    <li><a href="#"></a>Connect a wallet</li>
+                    <li class="header__item"><a href="#" class="header__link"></a>Marketplace</li>
+                    <li class="header__item"><a href="#" class="header__link"></a>Rankings</li>
+                    <li class="header__item"><a href="#" class="header__link"></a>Connect a wallet</li>
+                    <li class="header__nav-auth">
+                        <button class="header__auth"><i class="fa-regular fa-user"></i>Sign Up</button>
+                    </li>
                 </ul>
+
+                <div class="header__iction">
+                    <button onclick="btn()" class="header__togl">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+
             </div>
         </nav>
-    </header>
+    </head>
+
+    <main>
+        <section class="browse">
+
+            <h1 class="browse__title">Browse Marketplace</h1>
+            <p class="browse__list">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+
+            <div class="browse__search">
+                <input type="search" placeholder="Search your favourite NFTs">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </section>
+        
+        <section class="browses">
+
+            <div class="browses__items">
+
+                <div class="browses__item">
+
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="browses__card">
+
+                        <div class="browses__images">
+                            <img src="./images/Image Placeholder (1).svg" alt="">
+                        </div>
+
+                        <div class="browses__avatar-title-list">
+                            <h5 class="browses">Foxy Life</h5>
+                            <span class="browses__info-avatar">
+                                <img src="./images/Avatar.svg" alt="">
+                                <p class="browses__list">Orbition</p>
+                            </span>
+                        </div>
+
+                        <div class="browses__price">
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Price</p>
+                                <h4 class="browses__price-title">1.63 ETH</h4>
+                            </span>
+                            <span class="browses__price-bid">
+                                <p class="browses__price-list">Highest Bid</p>
+                                <h4 class="browses__price-title">0.33 wETH</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__nft-items">
+
+            <div class="footer__card">
+
+                <div class="footer__img-ntf">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+
+                <p class="footer__list">NFT marketplace UI created with Anima for Figma.</p>
+                <p class="footer__list">Join our community</p>
+    
+                <div class="footer__icon">
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="footer__card">
+                <h1 class="footer__title">Explore</h1>
+                <p class="footer__list">Marketplace</p>
+                <p class="footer__list">Rankings</p>
+                <p class="footer__list">Connect a wallet</p>
+            </div>
+
+           <div class="footer__card">
+
+            <h1 class="footer__title">Join Our Weekly Digest</h1>
+            <p class="footer__list">Get exclusive promotions & updates straight to your inbox.</p>
+
+            <div class="footer__form">
+                <input type="email" class="footer__mail" placeholder="Enter your email here">
+                <button class="footer__btn"><i class="fa-solid fa-envelope"></i>Subscribe</button>
+            </div>
+
+           </div>
+        </div>
+
+
+    </footer>
+
+    
 
 
     <script src="./js/app.js"></script>

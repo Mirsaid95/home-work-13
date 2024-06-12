@@ -6,6 +6,7 @@
   top: 0;
 }
 .header__nav {
+  width: 100%;
   padding: 30px 20px;
   position: relative;
 }
@@ -144,4 +145,240 @@ body {
   padding: 20px 30px;
   margin: 0 auto;
   max-width: 1440px;
+}
+
+.browse {
+  display: grid;
+  grid-template-columns: repeat(auto);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  padding: 80px;
+}
+.browse__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.browse__list {
+  color: white;
+  font-size: 16px;
+}
+.browse__search {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  border: 2px solid #3B3B3B;
+}
+.browse__search input {
+  width: 90%;
+  padding-left: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.browse__search .fa-solid {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .browse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 120px;
+  }
+  .browse__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  .browse__list {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .browse__search {
+    font-size: 22px;
+  }
+  .browse__search input {
+    color: white;
+    font-size: 22px;
+  }
+}
+.browses__items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 30px 30px;
+}
+.browses__icon-btns {
+  display: none;
+}
+.browses__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0px;
+  background-color: transparent;
+  border: 2px solid #A259FF;
+  border-radius: 25px;
+  font-size: 20px;
+  color: white;
+}
+.browses__icon-btn .fa-arrow-right {
+  color: #A259FF;
+}
+.browses__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.browses__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.browses__images {
+  width: 100%;
+}
+.browses__images img {
+  width: 100%;
+}
+.browses__avatar-title-list {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.browses__text {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+.browses__info-avatar {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+.browses__list {
+  font-size: 16px;
+  font-weight: 400;
+}
+.browses__price {
+  padding: 15px 25px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.browses__price-list {
+  color: #858584;
+  font-size: 14px;
+}
+.browses__card {
+  background-color: #3B3B3B;
+  border-radius: 30px;
+}
+
+@media (min-width: 900px) {
+  .browses__items {
+    padding: 50px 30px;
+  }
+  .browses__text {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1240px) {
+  .browses__items {
+    padding: 100px 120px;
+  }
+  .browses__text {
+    font-size: 28px;
+  }
+}
+.footer__nft-items {
+  width: 100%;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  line-height: 40px;
+}
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__list {
+  color: #858584;
+}
+.footer__icon .fa-brands {
+  color: #858584;
+}
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #A259FF;
+  font-size: 20px;
+  color: white;
+}
+.footer__mail {
+  padding: 20px 30px;
+  border: 1p solid;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  border-radius: 20px;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 970px) {
+  .footer {
+    display: flex;
+    gap: 20px;
+  }
+  .footer__nft-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__card {
+    width: 30%;
+    text-align: left;
+  }
+  .footer__form {
+    display: flex;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer__mail {
+    width: 80%;
+    height: 60px;
+  }
+  .footer__btn {
+    width: 30%;
+    height: 60px;
+    padding: 0px 30px;
+    margin-left: -80px;
+  }
 }

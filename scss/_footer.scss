@@ -1,0 +1,92 @@
+.footer{
+    &__nft-items{
+        width: 100%;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        line-height: 40px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
+    &__list{
+        color: #858584;
+    }
+    
+    &__icon{
+        .fa-brands{
+            color: #858584;
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: #A259FF;
+        font-size: 20px;
+        color: white;
+    }
+
+    &__mail{
+        padding: 20px 30px;
+        border: 1p solid;
+        border: none;
+        font-size: 18px;
+        outline: none;
+        border-radius: 20px;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width:970px){
+    .footer{
+        display: flex;
+        gap: 20px;
+
+        &__nft-items{
+            display: flex;
+            flex-direction:row;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card{
+            width: 30%;
+            text-align: left;
+        }
+
+        &__form{
+            display: flex;
+            height: 40%;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        &__mail{
+            width: 80%;
+            height: 60px;
+        }
+
+        &__btn{
+            width: 30%;
+            height: 60px;
+            padding: 0px 30px;
+            margin-left: -80px;
+        }
+    }
+}

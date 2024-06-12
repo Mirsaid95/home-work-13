@@ -1,0 +1,117 @@
+.browses{
+    &__items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        padding: 30px 30px;
+    }
+    &__icon-btns{
+        display: none;
+    }
+
+    &__icon-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 0px;
+        background-color: transparent;
+        border: 2px solid#A259FF;
+        border-radius: 25px;
+        font-size: 20px;
+        color: white;
+        .fa-arrow-right{
+            color: #A259FF;
+        }
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__images{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__avatar-title-list{
+        padding: 15px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__text{
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    &__info-avatar{
+        display: flex;
+        align-items: center;
+        color: white;
+        // justify-content: center;
+        gap: 10px;
+    }
+    &__list{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__price{
+        padding: 15px 25px;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        line-height: 40px;
+    }
+    
+    &__price-list{
+        color: #858584;
+        font-size: 14px;
+    }
+
+    &__card{
+        background-color: #3B3B3B;
+        border-radius: 30px;
+    }
+}
+
+
+@media(min-width:900px){
+    .browses{
+        &__items{
+            padding: 50px 30px;
+        }
+        
+
+        &__text{
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+
+    }
+}
+
+@media(min-width:1240px){
+    .browses{
+        &__items{
+            padding: 100px 120px;
+        }
+
+
+        &__text{
+            font-size: 28px;
+        }
+
+
+    }
+}
